@@ -22,10 +22,9 @@ private class AccountTriggerHandlerTest {
     @isTest static void testAfterInsert() {
         // Create and insert a test account
         Account testAccount = new Account(Name = 'Test Account');
-        insert testAccount;
 
         Test.startTest();
-        // No necesitas insertar testAccount nuevamente aquí
+        insert testAccount;
         Test.stopTest();
 
         // Verify that a related contact was created
